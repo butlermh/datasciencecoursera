@@ -1,4 +1,5 @@
-= Getting and cleaning data peer assessment =
+Getting and cleaning data peer assessment
+=========================================
 
 This directory contains five files:
 

@@ -1,30 +1,28 @@
-==================================================================
-Human Activity Recognition Using Smartphones Dataset
-Version 1.0 (Excerpt)
-==================================================================
+Human Activity Recognition Using Smartphones Dataset (Version 1.0 - Excerpt)
+============================================================================
 
-== Original dataset ==
+## Original dataset 
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
-Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Università degli Studi di Genova.
-Via Opera Pia 11A, I-16145, Genoa, Italy.
-activityrecognition@smartlab.ws
-http://www.smartlab.ws
+    Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+    Smartlab - Non Linear Complex Systems Laboratory
+    DITEN - Università degli Studi di Genova.
+    Via Opera Pia 11A, I-16145, Genoa, Italy.
+    activityrecognition@smartlab.ws
+    http://www.smartlab.ws
 
-== Description ==
+## Description 
 
 In the original dataset, experiments were carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, the 3-axial linear acceleration and 3-axial angular velocity was captured at a constant rate of 50Hz. The experiments were video-recorded to label the data manually. The obtained dataset was randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. For details of the license, see the end of this file. 
 
-== Excerpts ==
+## Excerpts
 
 There are two excerpts created from the original dataset. The first, `UCI_har_except.csv` was generated as follows: the training and test sets were combined. Then only the columns containing the mean and standard deviation measurements, plus the activity and subject was selected. The mean frequency measurements were not included. The complete set of columns included is shown in the variables section below. For the full meaning of the columns, please refer to the codebook of the original dataset via the URL above.
 
 A second excerpt, `UCI_har_tidy.csv` was then created by calculating the average of these values for a specific activity for a specific subject. The averages were counted by removing any missing data points.
 
-== Variables ==
+## Variables
 
 The following abbreviations are used in the variable names: acceleration (Acc), Jerkiness (Jerk), Gyro (Gryoscope) and Mag (Magnitude): 
 
@@ -97,7 +95,7 @@ The following abbreviations are used in the variable names: acceleration (Acc), 
     Activity
     Subject
 
-== Transformation ==
+## Transformation
 
 The data transformation is performed by `run_analysis.R` as follows:
 
