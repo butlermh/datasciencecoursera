@@ -125,20 +125,6 @@ Here is a complete list of variables:
     Activity
     Subject
 
-## Transformation
-
-The data transformation is performed by `run_analysis.R` as follows:
-
-- First it creates a temporary directory to store the data, if it does not already exist.
-- Next it downloads the zip file containing the data, if it does not already exist.
-- Then it unzips the zip file to the temporary directory.
-- Then it generates a list of column numbers to extract from the original dataset, and column names to give those columns.
-- Then it defines a function that loads the file containing the independent variables, the file containing the activity labels and the file containing the subject labels. It extract the required columns from these files and names them accordingly. 
-- It then calls this function to load the training data set and the test data set. 
-- It merges these two datasets in to a new data set. It saves this dataset as `UCI_har_excerpt.csv`
-- It then calculates the average for each measurement by subject and actitivity, ignoring missing values.
-- It saves this dataset as `UCI_har_tidy.csv`
-
 License:
 ========
 Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
